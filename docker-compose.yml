@@ -1,0 +1,15 @@
+version: "3"
+volumes:
+  node_modules_volume:
+services:
+  nextjs:
+    build: ./docker/
+    container_name: country-quiz-master
+    ports:
+      - "4001:3000"
+    volumes:
+      - ./app:/usr/src/app
+      - node_modules_volume:/usr/src/app/node_modules
+    tty: true
+    stdin_open: true
+    command: "yarn dev"

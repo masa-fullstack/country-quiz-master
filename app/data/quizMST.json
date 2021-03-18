@@ -1,0 +1,12 @@
+[
+  {
+    "quiz": "{capital} is the capital of",
+    "answerField": "capital",
+    "isImage": false
+  },
+  {
+    "quiz": "Which country does this flag belong to?",
+    "answerField": "flag",
+    "isImage": true
+  }
+]
