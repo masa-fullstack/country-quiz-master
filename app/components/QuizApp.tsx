@@ -109,14 +109,14 @@ const QuizApp: React.FC = () => {
 
   if (errorQuizMST || errorCountries)
     return (
-      <div className="text-red-500 text-3xl font-light text-center mt-40">
+      <div className="text-white text-3xl font-light text-center mt-40">
         failed to load
       </div>
     )
 
   if (!countries)
     return (
-      <div className="text-gray-500 text-3xl font-light text-center mt-40">
+      <div className="text-white text-3xl font-light text-center mt-40">
         loading...
       </div>
     )
