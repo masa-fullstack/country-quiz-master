@@ -40,13 +40,18 @@ const initialQuizAppState: QuizAppState = {
 
 const QuizApp: React.FC = () => {
   //state
-  const [displayMode, setDisplayMode] = useState<DisplayMode>('result')
+  const [isLoading, setIsLoading] = useState(true)
+  const [displayMode, setDisplayMode] = useState<DisplayMode>('question')
   const [isInCorrect, setIsInCorrect] = useState(false)
   const [countCorrect, setCountCorrect] = useState(0)
   const [selectedOption, setSelectedOption] = useState<Option>()
   const [quizAppState, setQuizAppState] = useState<QuizAppState>(
     initialQuizAppState
   )
+
+  useEffect(() => {
+    createNewQuiz()
+  }, [isLoading])
 
   const createNewQuiz: CreateNewQuiz = () => {
     if (countries) {
@@ -66,10 +71,6 @@ const QuizApp: React.FC = () => {
       })
     }
   }
-
-  useEffect(() => {
-    createNewQuiz()
-  }, [])
 
   const handleTryAgain: HandleTryAgain = () => {
     setCountCorrect(0)
@@ -119,7 +120,9 @@ const QuizApp: React.FC = () => {
         loading...
       </div>
     )
-
+  if (isLoading) {
+    setIsLoading(false)
+  }
   return (
     <div className="relative bg-white rounded-2xl py-16 px-10 sm:w-120 w-full">
       <div className="text-white text-2xl sm:text-3xl font-bold absolute -top-10 sm:-top-16 left-2 ">
