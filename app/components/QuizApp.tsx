@@ -124,13 +124,13 @@ const QuizApp: React.FC = () => {
     setIsLoading(false)
   }
   return (
-    <div className="relative bg-white rounded-2xl py-16 px-10 sm:w-120 w-full">
+    <div className="relative bg-white rounded-2xl sm:py-16 py-5 px-10 sm:w-120 w-full">
       <div className="text-white text-2xl sm:text-3xl font-bold absolute -top-10 sm:-top-16 left-2 ">
         COUNTRY QUIZ
       </div>
       {displayMode !== 'result' && (
         <div>
-          <div className="absolute -top-16 right-1">
+          <div className="absolute sm:-top-16 sm:right-1 sm:w-auto w-24 -top-14 right-1">
             <Image
               src="undraw_adventure_4hum_1.svg"
               width={162}

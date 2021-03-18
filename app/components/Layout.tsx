@@ -10,7 +10,7 @@ const Layout: React.FC<Props> = ({ children, title = 'Default title' }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <main className="container mx-auto flex flex-1 flex-col items-center mt-32 mb-10">
+      <main className="container mx-auto flex flex-1 flex-col items-center sm:mt-32 mt-14 mb-10">
         <div className="">{children}</div>
       </main>
       <footer className="w-full h-6 flex justify-center item-center text-white mb-10">
