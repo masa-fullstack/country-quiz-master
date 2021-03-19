@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Random quote generator</h1>
+<h1 align="center">COUNTRY QUIZ</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://quote-generator-master-five.vercel.app/">
+    <a href="https://country-quiz-master-woad.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/8Y3J4ucAMQpSnYTwwWW8">
+    <a href="https://devchallenges.io/challenges/Bu3G2irnaXmfwQ8sZkw8">
       Challenge
     </a>
   </h3>
@@ -33,7 +33,7 @@
 
 ## Overview
 
-![screenshot](./images/demo.png)
+![screenshot](./images/demo.gif)
 
 Developed with NextJS + Tailwindcss.<br/>
 <br/>
@@ -66,10 +66,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/masa-fullstack/quote-generator-master
+$ git clone https://github.com/masa-fullstack/country-quiz-master
 
 # Change directory
-$ cd quote-generator-master
+$ cd country-quiz-master
 
 ```
 
@@ -88,7 +88,6 @@ $ docker-compose up
 
 - [Tailwind CHEAT SHEET](https://nerdcave.com/tailwind-cheat-sheet)
 - [That's right. I am the SWR that makes React simple.](https://zenn.dev/uttk/articles/b3bcbedbc1fd00)
-
 
 ## Contact
 
